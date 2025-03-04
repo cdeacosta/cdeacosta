@@ -6,7 +6,7 @@
 graph TD
     A[Transaction Sources] --> B(Message Queue - Kafka/RabbitMQ);
     B --> C{End of Day?};
-    C -- Yes --> D[Batch Processing (Spark/Hadoop)];
+    C -- Yes --> D["Batch Processing (Spark/Hadoop)"];
     C -- No --> A;
     D --> E[Data Validation & Transformation];
     E --> F[Risk Analysis (ML/Algorithms)];
