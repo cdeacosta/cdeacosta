@@ -3,7 +3,7 @@ I'm glad you're here.
 Welcome to My GitHub Profile
 
 ```mermaid
-graph TD
+graph LR
     A[Transaction Sources] --> B(Message Queue - Kafka/RabbitMQ);
     B --> C{End of Day?};
     C -- Yes --> D["Batch Processing (Spark/Hadoop)"];
