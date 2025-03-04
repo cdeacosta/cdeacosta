@@ -3,11 +3,6 @@
 # Welcome to My GitHub Profile
 
 ```mermaid
-# Welcome to My GitHub Profile 👋
-
-Hello! I'm glad you've found your way here.
-
-```mermaid
 graph TD
     A[Transaction Sources] --> B(Message Queue - Kafka/RabbitMQ);
     B --> C{End of Day?};
