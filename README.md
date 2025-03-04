@@ -1,15 +1,14 @@
-Hi there 👋 I'm Chris DeAcosta
-I'm glad you're here.
-Welcome to My GitHub Profile
+# My Document with Mermaid
+
+This is some regular text before the Mermaid diagram.
 
 ```mermaid
-graph LR
-    A[Transaction Sources] --> B(Message Queue - Kafka/AWS-MSK/Azure-Events-Hub);
-    B --> C{End of Day?};
-    C -- Yes --> D["Batch Processing (Spark/Hadoop)"];
-    C -- No --> A;
-    D --> E[Data Validation & Transformation];
-    E --> F["Risk Analysis (ML/Algorithms)"];
-    F --> G[Reporting & Auditing];
-    G --> H["Data Warehouse (Snowflake/BigQuery)"];
-    D --> H;
+graph TD
+    A[Start] --> B{Decision};
+    B -- Yes --> C[Process 1];
+    B -- No --> D[Process 2];
+    C --> E[End];
+    D --> E;
+
+print("Hello, world!")
+
