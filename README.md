@@ -11,5 +11,5 @@ graph TD
     D --> E[Data Validation & Transformation];
     E --> F["Risk Analysis (ML/Algorithms)"];
     F --> G[Reporting & Auditing];
-    G --> H[Data Warehouse (Snowflake/BigQuery)];
+    G --> H["Data Warehouse (Snowflake/BigQuery)"];
     D --> H;
