@@ -11,4 +11,5 @@ graph TD
     D --> E;
 
 print("Hello, world!")
+delay 5
 print("Goodbye, world!")
