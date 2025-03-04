@@ -1,6 +1,6 @@
-## Hi there 👋 I'm Chris DeAcosta
-## I'm glad you're here.
-# Welcome to My GitHub Profile
+Hi there 👋 I'm Chris DeAcosta
+I'm glad you're here.
+Welcome to My GitHub Profile
 
 ```mermaid
 graph TD
@@ -13,6 +13,3 @@ graph TD
     F --> G[Reporting & Auditing];
     G --> H[Data Warehouse (Snowflake/BigQuery)];
     D --> H;
-<!--
-**cdeacosta/cdeacosta** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-# Welcome to My GitHub Profile
