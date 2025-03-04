@@ -13,7 +13,7 @@ graph LR
     F --> G[Reporting & Auditing];
     G --> H["Data Warehouse (Snowflake/BigQuery)"];
     D --> H;
-********************************************************************************
+``
 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
 👯 I’m looking to collaborate on ... FinOps tasks
