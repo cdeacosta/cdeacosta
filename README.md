@@ -1,4 +1,4 @@
-Source "https://github.com/cdeacosta/cdeacosta/blob/main/ChrisDeAcostaCard.png"
+ChrisDeAcostaCard.png"
 
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
