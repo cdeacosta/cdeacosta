@@ -23,8 +23,6 @@ graph LR
 
 ---
 
-```
-
 ```mermaid
 graph LR
     A[IoT Devices (MQTT)] --> B(AWS IoT Core);
@@ -37,7 +35,6 @@ graph LR
 ---
 
 ```
-
 
 - 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 - 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
