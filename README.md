@@ -24,15 +24,20 @@ graph LR
 
 ```mermaid
 graph LR
-    A[Transaction Sources] --> B(Message Queue - Kafka/AWS-MSK/Azure-Events-Hub);
-    B --> C{End of Day?};
-    C -- Yes --> D["Batch Processing (Spark/Hadoop)"];
-    C -- No --> A;
-    D --> E[Data Validation & Transformation];
-    E --> F["Risk Analysis (ML/Algorithms)"];
-    F --> G[Reporting & Auditing];
-    G --> H["Data Warehouse (Snowflake/BigQuery)"];
-    D --> H;
+    A[IoT Devices (MQTT)] --> B(AWS IoT Core);
+    B --> C(DataStax Astra Streaming);
+    C --> D(DataStax Astra DB);
+    D --> E(AWS API Gateway);
+    E --> F[Microservices];
+
+    subgraph IoT Data Pipeline
+        A;
+        B;
+        C;
+        D;
+        E;
+        F;
+    end
 
 ```
 
