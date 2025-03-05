@@ -1,4 +1,4 @@
-<img src"https://github.com/cdeacosta/cdeacosta/blob/main/Chris%20DeAcosta%20Business%20Card.png" alt="banner that says Chris DeAcosta - Tech Futurist, FinOps Enthusiast">
+<img src"https://github.com/cdeacosta/cdeacosta/blob/main/Chris%20DeAcosta%20Business%20Card.png">
 
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
