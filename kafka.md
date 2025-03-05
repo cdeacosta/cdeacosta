@@ -1,3 +1,4 @@
+```mermaid
 graph LR
     A[RESTful API] --> B(Kafka Producer);
     B --> C(Kafka Broker);
@@ -77,3 +78,4 @@ graph LR
     style I3 fill:#efe,stroke:#333,stroke-width:2px
     style J fill:#efe,stroke:#333,stroke-width:2px
     style K fill:#efe,stroke:#333,stroke-width:2px
+```
