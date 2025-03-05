@@ -6,7 +6,7 @@ Welcome to My GitHub Profile
 
 ---
 
-High Level real world application I've just completed for a client.
+High Level real world application I'm working on for a client currently.
 
 ```mermaid
 graph LR
