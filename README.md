@@ -33,14 +33,6 @@ graph LR
     D --> E(AWS API Gateway);
     E --> F[Microservices];
 
-    subgraph IoT Data Pipeline
-        A;
-        B;
-        C;
-        D;
-        E;
-        F;
-    end
 ```
 
 ---
