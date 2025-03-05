@@ -34,7 +34,6 @@ graph LR
         EE;
         FF;
     end
-
 ```
 
 - 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
