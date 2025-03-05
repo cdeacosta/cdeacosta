@@ -1,4 +1,5 @@
-(https://github.com/cdeacosta/cdeacosta/blob/main/Chris%20DeAcosta%20Business%20Card.png)
+<img src"https://github.com/cdeacosta/cdeacosta/blob/main/Chris%20DeAcosta%20Business%20Card.png" alt="banner that says Chris DeAcosta - Tech Futurist, FinOps Enthusiast">
+
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
 Welcome to My GitHub Profile
