@@ -32,3 +32,5 @@ graph LR
 - 📫 How to reach me: ... chris.deacosta@gmail.com
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
 ```
+
+![Kafka Pipeline](Kafka-DataPipeline.png)
