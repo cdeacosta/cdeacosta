@@ -1,4 +1,5 @@
 ```mermaid
+
 graph LR
     A[IoT Devices] --> B(Azure IoT Hub);
     B --> C(Azure Stream Analytics);
