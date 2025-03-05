@@ -33,4 +33,8 @@ graph LR
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
 ```
 
+---
+
+This is a Kafka Pipeline with four individual topics being written.
+
 ![Kafka Pipeline](Kafka-DataPipeline.png)
