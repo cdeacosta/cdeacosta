@@ -38,3 +38,10 @@ graph LR
 This is a Kafka Pipeline with four individual topics being written.
 
 ![Kafka Pipeline](Kafka-DataPipeline.png)
+
+---
+
+This is an Azure IoT Pipeline.  I've left off the client name intentionally
+![Azure IoT Pipeline](Azure-IoT-Pipeline.png)
+
+---
