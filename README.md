@@ -32,7 +32,6 @@ graph LR
     C --> D(DataStax Astra DB);
     D --> E(AWS API Gateway);
     E --> F[Microservices];
-
 ```
 
 ---
