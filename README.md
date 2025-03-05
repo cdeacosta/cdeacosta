@@ -6,6 +6,8 @@ Welcome to My GitHub Profile
 
 ---
 
+High Level real world application I've just completed for a client.
+
 ```mermaid
 graph LR
     A[Transaction Sources] --> B(Message Queue - Kafka/AWS-MSK/Azure-Events-Hub);
