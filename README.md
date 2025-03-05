@@ -1,4 +1,4 @@
-<img src"https://github.com/cdeacosta/cdeacosta/blob/main/ChrisDeAcostaCard.png" >
+Source "https://github.com/cdeacosta/cdeacosta/blob/main/ChrisDeAcostaCard.png"
 
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
