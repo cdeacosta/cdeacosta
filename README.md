@@ -1,5 +1,4 @@
-![Alt text](Chris DeAcosta Business Card.png)
-
+[![Alt text](Chris DeAcosta)](https://github.com/cdeacosta/cdeacosta/blob/main/Chris%20DeAcosta%20Business%20Card.png)
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
 Welcome to My GitHub Profile
