@@ -1,5 +1,7 @@
 ![Chris DeAcosta](ChrisDeAcostaCard.png)
 
+![Chris DeAcosta](ChrisDeAcostaCard.png)
+
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
 Welcome to My GitHub Profile
@@ -11,7 +13,6 @@ High Level real world application I've just completed for a client.
 ```mermaid
 graph LR
     A[Transaction Sources] --> B(Message Queue - Kafka/AWS-MSK/Azure-Events-Hub);
-    A --> AA[IoT Devices (MQTT)];
     B --> C{End of Day?};
     C -- Yes --> D["Batch Processing (Spark/Hadoop)"];
     C -- No --> A;
@@ -20,11 +21,10 @@ graph LR
     F --> G[Reporting & Auditing];
     G --> H["Data Warehouse (Snowflake/BigQuery)"];
     D --> H;
-    AA --> BB(AWS IoT Core);
-    BB --> CC(DataStax Astra Streaming);
-    CC --> DD(DataStax Astra DB);
-    DD --> EE(AWS API Gateway);
-    EE --> FF[Microservices];
+```
+
+---
+
 ```
 
 - 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
