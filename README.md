@@ -25,15 +25,7 @@ graph LR
     CC --> DD(DataStax Astra DB);
     DD --> EE(AWS API Gateway);
     EE --> FF[Microservices];
-
-    subgraph IoT Data Pipeline
-        AA;
-        BB;
-        CC;
-        DD;
-        EE;
-        FF;
-    end
+```
 
 - 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 - 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
