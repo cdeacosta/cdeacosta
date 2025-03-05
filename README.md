@@ -19,6 +19,7 @@ graph LR
     F --> G[Reporting & Auditing];
     G --> H["Data Warehouse (Snowflake/BigQuery)"];
     D --> H;
+```
 
 
 ```mermaid
