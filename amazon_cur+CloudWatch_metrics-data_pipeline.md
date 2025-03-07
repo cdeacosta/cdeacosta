@@ -4,15 +4,15 @@ graph TD
     A[Situation: Pressure to Produce Reports] --> B{Task: Design Data Pipeline};
     B --> C[Action: Data Ingestion & Storage];
     C --> D[CUR Data: S3 Bucket];
-    D --> E[AWS Glue (CUR): Process & Transform];
+    D --> E["AWS Glue (CUR): Process & Transform"];
     E --> F[Redshift: CUR Data Storage];
     C --> G[CloudWatch Metrics: Metric Streams];
     G --> H[Kinesis Data Firehose: Centralized Stream];
     H --> I[S3: CloudWatch Metrics Storage];
-    I --> J[AWS Glue (CloudWatch): Process & Transform];
+    I --> J["AWS Glue (CloudWatch): Process & Transform"];
     J --> F;
     F --> K[Action: Data Transformation & Merging];
-    K --> L[AWS Glue (PySpark): Transformation & Joins];
+    K --> L["AWS Glue (PySpark): Transformation & Joins"];
     L --> M{Normalization & Standardization};
     M --> N{Join CUR & CloudWatch Data};
     N --> O{Calculated Fields (Idle, Volumes, etc.)};
@@ -53,5 +53,4 @@ graph TD
     subgraph Automation and Orchestration
         Y;Z;AA;AB;AC;
     end
-
 ```
