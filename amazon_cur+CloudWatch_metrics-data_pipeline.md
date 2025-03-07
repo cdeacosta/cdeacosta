@@ -33,25 +33,25 @@ graph TD
     AC --> AD[Result: 20% Cost Reduction in 3 Months];
     AD --> AE{Improved Visibility};
     AE --> AF{Impressed CFO & Finance};
-    
+
     subgraph Data Ingestion and Storage
-        D;E;F;G;H;I;J;
+        D; E; F; G; H; I; J;
     end
-    
+
     subgraph Data Transformation and Merging
-        K;L;M;N;O;P;
+        K; L; M; N; O; P;
     end
-    
+
     subgraph Data Warehousing
-        Q;R;S;T;
+        Q; R; S; T;
     end
-    
+
     subgraph Reporting and Analysis
-        U;V;W;X;
+        U; V; W; X;
     end
-    
+
     subgraph Automation and Orchestration
-        Y;Z;AA;AB;AC;
+        Y; Z; AA; AB; AC;
     end
 
 ```
