@@ -53,5 +53,4 @@ graph TD
     subgraph Automation and Orchestration
         Y; Z; AA; AB; AC;
     end
-
 ```
