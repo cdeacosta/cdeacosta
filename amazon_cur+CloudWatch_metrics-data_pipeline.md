@@ -35,22 +35,27 @@ graph TD
     AE --> AF{Impressed CFO & Finance};
 
     subgraph Data Ingestion and Storage
+        direction TD
         D; E; F; G; H; I; J;
     end
 
     subgraph Data Transformation and Merging
+        direction TD
         K; L; M; N; O; P;
     end
 
     subgraph Data Warehousing
+        direction TD
         Q; R; S; T;
     end
 
     subgraph Reporting and Analysis
+        direction TD
         U; V; W; X;
     end
 
     subgraph Automation and Orchestration
+        direction TD
         Y; Z; AA; AB; AC;
     end
 ```
