@@ -15,7 +15,7 @@ graph TD
     K --> L["AWS Glue (PySpark): Transformation & Joins"];
     L --> M{Normalization & Standardization};
     M --> N{Join CUR & CloudWatch Data};
-    N --> O{Calculated Fields (Idle, Volumes, etc.)};
+    N --> O["Calculated Fields (Idle, Volumes, etc)"];
     O --> P{Untagged Assets Logic};
     P --> Q[Action: Data Warehousing (Redshift)];
     Q --> R{Store Merged & Transformed Data};
@@ -53,4 +53,5 @@ graph TD
     subgraph Automation and Orchestration
         Y;Z;AA;AB;AC;
     end
+
 ```
