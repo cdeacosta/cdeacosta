@@ -1,7 +1,7 @@
 ```mermaid
 
 graph TD
-    A [Situation: Pressure to Produce Reports] --> B{Task: Design Data Pipeline};
+    A[Situation: Pressure to Produce Reports] --> B{Task: Design Data Pipeline};
     B --> C[Action: Data Ingestion & Storage];
     C --> D[CUR Data: S3 Bucket];
     D --> E[AWS Glue (CUR): Process & Transform];
