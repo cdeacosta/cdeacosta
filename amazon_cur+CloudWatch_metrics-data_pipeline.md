@@ -27,7 +27,7 @@ graph TD
     X --> Y[Action: Automation & Orchestration];
     Y --> Z[AWS Step Functions: Pipeline Orchestration];
     Z --> AA{Reliable & Automatic Pipeline};
-    Y --> AB[CloudWatch Events (EventBridge): Trigger Workflow];
+    Y --> AB["CloudWatch Events - EventBridge: Trigger Workflow"];
     AB --> AC{Scheduled/Event-Based Trigger};
     AC --> AD[Result: 20% Cost Reduction in 3 Months];
     AD --> AE{Improved Visibility};
