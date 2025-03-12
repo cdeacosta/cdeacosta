@@ -2,15 +2,28 @@
 graph LR
     A[IDE] --> B(Github);
     B --> C(Jenkins);
-    C --> D[PyLint<br>Style];
-    D --> E[Automated Tests<br>Perf & Load Tests<br>Smoke Tests];
+    C --> D[PyLint Style];
+    subgraph E [Automated Tests]
+        E1[Perf & Load Tests]
+        E2[Smoke Tests]
+    end
     C --> F{Build};
-    F --> G[ECS Cluster<br>QA];
-    F --> H[ECS Cluster<br>Perf];
-    F --> I[ECS Cluster<br>Staging];
+    F --> G[ECS Cluster QA];
+    F --> H[ECS Cluster Perf];
+    F --> I[ECS Cluster Staging];
     J[Static Code Analysis<br>Sonarcube] --> F;
     K[ECR] -.-> F;
-    H --> L[1. Monitoring<br>• Datadog<br>• CloudWatch<br>• AppDynamics];
-    I --> M[1. Monitoring<br>• Datadog<br>CloudWatch<br>• AppDynamics];
+    subgraph L [Monitoring]
+        L1[Datadog]
+        L2[CloudWatch]
+        L3[AppDynamics]
+    end
+    H --> L;
+    subgraph M [Monitoring]
+        M1[Datadog]
+        M2[CloudWatch]
+        M3[AppDynamics]
+    end
+    I --> M;
     G --> E;
     H --> E;
