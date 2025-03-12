@@ -35,4 +35,14 @@ graph LR
     F --> R;
 
     R --> S[Redshift];
+    S --> T[Power BI];
+
+    C --> N[Slack<br>Build Started];
+    F --> O[Slack<br>Build Completed];
+    E --> P[Slack<br>Tests Completed];
+    G --> Q[Slack<br>Deployed to QA];
+    H --> R1[Slack<br>Deployed to Perf];
+    I --> S1[Slack<br>Deployed to Staging];
+
+    R --> S[Redshift];
     S --> T[Data Analysis];
