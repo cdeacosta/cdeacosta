@@ -44,5 +44,9 @@ graph LR
     H --> R1[Slack<br>Deployed to Perf];
     I --> S1[Slack<br>Deployed to Staging];
 
-    R --> S[Redshift];
-    S --> T[Data Analysis];
+    style N fill:#36C5F0,stroke:#fff,stroke-width:2px;
+    style O fill:#36C5F0,stroke:#fff,stroke-width:2px;
+    style P fill:#36C5F0,stroke:#fff,stroke-width:2px;
+    style Q fill:#36C5F0,stroke:#fff,stroke-width:2px;
+    style R1 fill:#36C5F0,stroke:#fff,stroke-width:2px;
+    style S1 fill:#36C5F0,stroke:#fff,stroke-width:2px;
