@@ -50,3 +50,8 @@ This is an AWS Cost and Usage Report streaming pipeline flow.  I designed this f
 ![Amazon CUR Streaming Pipeline](amazon_cur+CloudWatch_metrics-data_pipeline.png)
 
 ---
+
+Collecting data from a pipeline for status to Slack and Alerting.
+![CI/CD Pipeline Data Flow](CI-CD-Pipeline-Dataflow.png)
+
+---
