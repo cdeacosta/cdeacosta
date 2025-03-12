@@ -27,3 +27,12 @@ graph LR
     I --> M;
     G --> E;
     H --> E;
+
+    D --> R[Redis];
+    E --> R;
+    L --> R;
+    M --> R;
+    F --> R;
+
+    R --> S[Redshift];
+    S --> T[Data Analysis];
