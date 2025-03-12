@@ -45,3 +45,8 @@ This is an Azure IoT Pipeline.  I've left off the client name intentionally
 ![Azure IoT Pipeline](Azure-IoT-Pipeline.png)
 
 ---
+
+This is an AWS Cost and Usage Report streaming pipeline flow.  I designed this for a friend who involved in the early stages of FinOps at Kabbage.
+![Amazon CUR Streaming Pipeline](amazon_cur+CloudWatch_metrics-data_pipeline.png)
+
+---
