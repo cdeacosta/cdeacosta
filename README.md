@@ -57,7 +57,7 @@ Collecting data from a pipeline for status to Slack and Alerting.
 
 ```mermaid
 graph LR
-    A[Satellite Feed (500 Mbps)] --> B(Multiplexer);
+    A[Satellite Feed (500 Mbps)] --> B(Mux);
     B --> B;
     B --> B;
     B -- "Produces-HLS-Chunks-(~9.72s)" --> C{IPAN System};
