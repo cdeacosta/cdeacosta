@@ -58,6 +58,7 @@ Collecting data from a pipeline for status to Slack and Alerting.
 ```mermaid
 graph LR
     A[Satellite Feed] --> B(Mux);
+```
 
 
 SiriusXM Streaming Content Delivery Process
