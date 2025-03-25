@@ -46,7 +46,7 @@ This is an Azure IoT Pipeline.  I've left off the client name intentionally
 
 ---
 
-This is an AWS Cost and Usage Report streaming pipeline flow.  I designed this for a friend who involved in the early stages of FinOps at Kabbage.
+This is an AWS Cost and Usage Report streaming pipeline flow.  I designed this for a friend who is involved in the early stages of FinOps at Kabbage.
 ![Amazon CUR Streaming Pipeline](amazon_cur+CloudWatch_metrics-data_pipeline.png)
 
 ---
@@ -98,5 +98,6 @@ Akamai's geographically distributed network of servers ensures that the content 
 
 The audio content delivered through Akamai is protected by a content key, preventing unauthorized access.
 Clients (user devices running the SiriusXM streaming app) need to perform a key exchange to gain access to this content. This involves communication between the client API (likely a backend service managed by SiriusXM), the client application on the user's device, and Akamai. The specifics of this key exchange process (e.g., the protocol used, the details of authentication and authorization) are not fully detailed in the provided information. However, it ensures that only legitimate SiriusXM subscribers can decrypt and listen to the streamed content.
+
 ---
 
