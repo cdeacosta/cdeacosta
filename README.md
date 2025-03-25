@@ -54,3 +54,45 @@ Collecting data from a pipeline for status to Slack and Alerting.
 ![CI/CD Pipeline Data Flow](CI-CD-Pipeline-Dataflow.png)
 
 ---
+
+```mermaid
+graph LR
+    A[Satellite Feed (500 Mbps)] --> B(Multiplexer);
+    B -- "24bit 48kHz/16bit 44.1kHz Stereo" --> B;
+    B -- "Produces HLS Chunks (~9.72s)" --> C{IPAN System};
+    B -- "Produces HLS Manifest File" --> D(Web Server - Caching);
+    C -- "Groups ~10-12 channels" --> D;
+    D --> E(Akamai CDN);
+    E -- "Content Protected by Key" --> F(Client API & Clients);
+    F -- "Key Exchange" --> E;
+
+SiriusXM Streaming Content Delivery Process
+
+1. Content Acquisition and Initial Processing:
+
+The audio content originates from a satellite feed, which carries data at a rate of 500 Mbps.
+This feed consists of 24-bit, 48 kHz linear uncompressed stereo audio for each of the approximately 470 channels. Alternatively, a 16-bit, 44.1 kHz stereo format was also used.
+This high-bandwidth audio stream is fed into a Multiplexer.
+2. HLS Chunking and Manifest Generation:
+
+The Multiplexer processes the incoming audio and segments it into HLS (HTTP Live Streaming) chunks. These chunks are approximately 9.72 seconds in length, although the exact duration might vary.
+The Multiplexer is also responsible for generating the HLS manifest file. This file contains metadata about the available chunks, including their sequence and timing, which allows client devices to play the content seamlessly.   
+3. IPAN System for Channel Grouping:
+
+The generated HLS chunks for each channel are then organized and segmented further using a system called IPAN (likely an internal SiriusXM term for an IP-based audio node or similar).
+Each IPAN is responsible for a grouping of approximately 10 to 12 channels. This segmentation likely helps in managing and distributing the large number of channels offered by SiriusXM.
+With around 20 IPANs, the system could theoretically handle up to 240 channels (based on the lower estimate of 10 channels per IPAN). To accommodate approximately 470 channels, a greater number of IPANs would be utilized.
+4. Web Server Caching:
+
+The output from the IPAN system, consisting of the segmented HLS chunks and the associated manifest files, is then sent to a web server.
+This web server acts as a caching mechanism, storing the content temporarily to handle requests efficiently and reduce the load on the originating systems.
+5. Content Delivery Network (CDN):
+
+The web server then forwards the HLS chunks and manifest files to a Content Delivery Network (CDN), in this case, Akamai.
+Akamai's geographically distributed network of servers ensures that the content is delivered to users with low latency and high availability, regardless of their location.   
+6. Content Protection and Key Exchange:
+
+The audio content delivered through Akamai is protected by a content key, preventing unauthorized access.
+Clients (user devices running the SiriusXM streaming app) need to perform a key exchange to gain access to this content. This involves communication between the client API (likely a backend service managed by SiriusXM), the client application on the user's device, and Akamai. The specifics of this key exchange process (e.g., the protocol used, the details of authentication and authorization) are not fully detailed in the provided information. However, it ensures that only legitimate SiriusXM subscribers can decrypt and listen to the streamed content.
+---
+
