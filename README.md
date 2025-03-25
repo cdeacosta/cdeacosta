@@ -57,12 +57,12 @@ Collecting data from a pipeline for status to Slack and Alerting.
 
 ```mermaid
 graph LR
-    A[Satellite Feed (500 Mbps)] --> B;
-    style B fill:#fff
-    B("Multiplexer") --> B;
-    B("Multiplexer") --> B;
-    B("Multiplexer") -- "Produces HLS Chunks (~9.72s)" --> C{IPAN System};
-    B("Multiplexer") -- "Produces HLS Manifest File" --> D(Web Server - Caching);
+    style A fill:#fff,stroke:#333,stroke-width:2px
+    A[Satellite Feed - 500 Mbps] --> X;
+    X -- "24bit 48kHz Stereo" --> X(Mux);
+    X -- "16bit 44.1kHz Stereo" --> X(Mux);
+    X -- "Produces HLS Chunks (~9.72s)" --> C{IPAN System};
+    X -- "Produces HLS Manifest File" --> D(Web Server - Caching);
     C -- "Groups ~10-12 channels" --> D;
     D --> E(Akamai CDN);
     E -- "Content Protected by Key" --> F(Client API & Clients);
