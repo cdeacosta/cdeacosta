@@ -65,6 +65,7 @@ graph LR
     D --> E(Akamai CDN);
     E -- "Content Protected by Key" --> F(Client API & Clients);
     F -- "Key Exchange" --> E;
+```
 
 SiriusXM Streaming Content Delivery Process
 
