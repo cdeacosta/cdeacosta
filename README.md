@@ -8,6 +8,8 @@ Welcome to My GitHub Profile
 
 This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government agency
 
+```mermaid
+
 graph TD;
     A[Situation: Pressure to Produce Reports] --> B{Task: Design Data Pipeline};
     B --> C[Action: Data Ingestion & Storage];
@@ -101,7 +103,7 @@ graph TD;
     style FA fill:#90EE90,stroke:#333,stroke-width:2px,color:#000;
     FA -- "FedRAMP Authorized" --> CA;
 
-
+```
 
 ---
 
