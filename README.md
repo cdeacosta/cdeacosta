@@ -22,6 +22,7 @@ Most of what you see here are projects I've done in the past, OR things that I a
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
 
 ---
+## Projects
 
 ⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government associated contract.
 
