@@ -8,6 +8,7 @@ Most of what you see here are projects I've done in the past, OR things that I a
 - 🔭 I’m currently working on ... A FedRAMP project, and a Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 - 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
 - 👯 I’m looking to collaborate on ... FinOps tasks
+## Certifications
 - [FinOps Certified Practitioner FOCP  🏆](https://github.com/cdeacosta/cdeacosta/blob/f5f733dcb45dd8bce9192bb926ffadda3604d378/FinOps%20-%20DeAcosta%20certificate-vkzzbp4idzfy-1744318412.pdf)
 - [AWS Certified Cloud Practitioner  🏆](https://github.com/cdeacosta/cdeacosta/blob/843c3b054906b89eeb9f5b14c2b88754296b3489/AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf)
 - [Project Management Certificate  🏆](https://github.com/cdeacosta/cdeacosta/blob/3414447d89612865c7b83eb9329e47e7b905df7a/Chris-DeAcosta-PMCertificate-KSU.pdf)
