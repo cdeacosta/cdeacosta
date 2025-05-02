@@ -178,7 +178,7 @@ graph LR
     end
 
 ```
-### Description
+#### Description
 •	Data Sources: This subgraph shows the initial sources of data: AWS Cost and Usage Report (CUR) files and Datadog telemetry data. Both are ingested into Redshift.
 •	Data Ingestion & Processing: This part illustrates that Redshift acts as the central data warehouse where data is aggregated. Apache Airflow is included as a potential orchestration tool for the data ingestion pipelines.
 •	Data Usage: This section highlights the various purposes for which the data in Redshift is used, including FinOps reporting, tracking KPIs and SLAs, and for incident response related to both the environment and FinOps.
@@ -243,7 +243,7 @@ graph LR
     F -- "Key Exchange" --> E;
 ```
 
-
+#### Description
 SiriusXM Streaming Content Delivery Process
 
 1. Content Acquisition and Initial Processing:
