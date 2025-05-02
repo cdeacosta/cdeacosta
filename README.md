@@ -16,10 +16,11 @@ Most of what you see here are projects I've done in the past, OR things that I a
 - [Project Management Certificate  🏆](https://github.com/cdeacosta/cdeacosta/blob/3414447d89612865c7b83eb9329e47e7b905df7a/Chris-DeAcosta-PMCertificate-KSU.pdf)
 
 ## About Me
-- When it comes to my career, I enjoy FinOps, SRE, and DevOps
-- 💬 Ask me about ... Data Pipelines
+- When it comes to my career, I enjoy Cloud Architecture, FinOps, SRE, and DevOps
+- 💬 Ask me about ... Data Pipelines, they are more important than I thought 15 years ago.
 - 📫 How to reach me: ... chris.deacosta@gmail.com
-- ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
+- ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. ![image](https://github.com/user-attachments/assets/ab797b21-5e7a-41b9-a078-127e4ae56c1f)
+
 
 ---
 ## Projects
