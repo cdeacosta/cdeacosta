@@ -5,13 +5,17 @@ I'm glad you're here.
 Welcome to My GitHub Profile
 Most of what you see here are projects I've done in the past, OR things that I am working on now.  Not everything is represented here, and I cannot claim every single aspect of these projects has been done with my work alone.  I had a large part in the architecture and many of the data workflows.  I can claim that I know how the work was accomplished since all of these projects had active design reviews.  For the projects I did all or the majority of the work I've put in the following *****
 
+## Working On
 - 🔭 I’m currently working on ... A FedRAMP project, and a Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 - 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
-- 👯 I’m looking to collaborate on ... FinOps tasks
+
 ## Certifications
 - [FinOps Certified Practitioner FOCP  🏆](https://github.com/cdeacosta/cdeacosta/blob/f5f733dcb45dd8bce9192bb926ffadda3604d378/FinOps%20-%20DeAcosta%20certificate-vkzzbp4idzfy-1744318412.pdf)
 - [AWS Certified Cloud Practitioner  🏆](https://github.com/cdeacosta/cdeacosta/blob/843c3b054906b89eeb9f5b14c2b88754296b3489/AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf)
 - [Project Management Certificate  🏆](https://github.com/cdeacosta/cdeacosta/blob/3414447d89612865c7b83eb9329e47e7b905df7a/Chris-DeAcosta-PMCertificate-KSU.pdf)
+
+## About Me
+- When it comes to my career, I enjoy FinOps, SRE, and DevOps
 - 💬 Ask me about ... Data Pipelines
 - 📫 How to reach me: ... chris.deacosta@gmail.com
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
