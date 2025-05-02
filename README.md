@@ -3,7 +3,7 @@
 Hi there 👋 I'm Chris DeAcosta
 I'm glad you're here.
 Welcome to My GitHub Profile  
-Most of what you see here are projects I've done in the past, OR things that I am working on now.  Not everything is represented here, and I cannot claim every single aspect of these projects has been done with my work alone.  I had a large part in the architecture and many of the data workflows.  I can claim that I know how the work was accomplished since all of these projects had active design reviews.  For the projects I did all or the majority of the work I've put in the following *****
+Most of what you see here are projects I've done in the past, OR things that I am working on now.  Not everything is represented here, and I cannot claim every single aspect of these projects has been done with my work alone.  I had a large part in the architecture and many of the data workflows.  I can claim that I know how the work was accomplished since all of these projects had active design reviews.  For the projects I did all or the majority of the work I've put in the following ⭐⭐⭐⭐⭐
 
 ## Working On
 - 🔭 I’m currently working on ... A FedRAMP project, and a Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
@@ -22,7 +22,7 @@ Most of what you see here are projects I've done in the past, OR things that I a
 
 ---
 
-***** This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government agency
+⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government agency
 
 ```mermaid
 
@@ -123,7 +123,7 @@ graph TD;
 
 ---
 
-***** Azure Events Hub Data Workflow
+⭐⭐⭐⭐⭐ Azure Events Hub Data Workflow
 
 ```mermaid
 graph LR
