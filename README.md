@@ -21,6 +21,7 @@ Most of what you see here are projects I've done in the past, OR things that I a
 - 📫 How to reach me: ... chris.deacosta@gmail.com
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
 
+![image](https://github.com/user-attachments/assets/9f520bcc-1430-4506-91db-1d0297b471e8)
 ---
 
 ⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government associated contract.
