@@ -6,8 +6,9 @@ Welcome to My GitHub Profile
 Most of what you see here are projects I've done in the past, OR things that I am working on now.  Not everything is represented here, and I cannot claim every single aspect of these projects has been done with my work alone.  I had a large part in the architecture and many of the data workflows.  I can claim that I know how the work was accomplished since all of these projects had active design reviews.  For the projects I did all or the majority of the work I've put in the following ⭐⭐⭐⭐⭐
 
 ## Working On
-- 🔭 I’m currently working on ... Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB (NO DIAGRAM)
-- 🔭 A FedRAMP project
+- 🔭 Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB (NO DIAGRAM)
+- 🔭 A FedRAMP project involving a U.S. Government connected entity.
+- 🔭 Datadog w/ Bits AI + Telemetry Data, Cloudability for FinOps reporting dashboards, OpsGenie for alerting,  AWS DataZone for data catalog and data governance. 
 
 ## Certifications
 - [FinOps Certified Practitioner FOCP  🏆](https://github.com/cdeacosta/cdeacosta/blob/f5f733dcb45dd8bce9192bb926ffadda3604d378/FinOps%20-%20DeAcosta%20certificate-vkzzbp4idzfy-1744318412.pdf)
@@ -121,6 +122,61 @@ graph TD;
 
 ```
 
+---
+Outside of starting SiriusXM Streaming from inception, this is the largest project I've ever been a part of.  I am the Cloud Solution Architect for this project.  This representation is probably going to change depending on cost controls.  This is a very expensive solution that so far, the client is not balking at the pricetag.
+
+```mermaid
+graph LR
+    subgraph Data Sources
+        A[AWS CUR Files] --> B(Redshift);
+        C[Datadog Telemetry] --> B;
+    end
+
+    subgraph Data Ingestion & Processing
+        B -- Aggregation --> D(Data Warehouse - Redshift);
+        E[Apache Airflow] --> B;
+    end
+
+    subgraph Data Usage
+        F(FinOps Reporting Real-time) -- From Data Warehouse --> D;
+        G(KPIs) -- From Data Warehouse --> D;
+        H(SLAs) -- From Data Warehouse --> D;
+        I(Environment Incident Response) -- From Data Warehouse --> D;
+        J(FinOps Incident Response) -- From Data Warehouse --> D;
+    end
+
+    subgraph Application Layer
+        K[CloudFront] --> L(RESTful API);
+        L --> M(ECS Microservices);
+        L --> N[Lambda Functions];
+        O[Backend Services for Metadata] --> P(Web Applications);
+        O --> Q[Asset Catalog];
+    end
+
+    subgraph Metadata & Governance
+        Q -- Assets --> R[AWS DataZone];
+        R -- Governance Assistance --> S(Data Governance);
+    end
+
+    subgraph Configuration Management
+        T[AWS CodeDeploy] -- Config Changes --> A;
+        T -- Config Changes --> C;
+        T -- Config Changes --> M;
+        T -- Config Changes --> N;
+        T -- Config Changes --> O;
+    end
+
+    subgraph Monitoring & Alerting
+        C -- Metrics --> U[Datadog];
+        U -- Bits AI --> V(Datadog Bits AI);
+        V -- Alerts --> W[Atlassian OpsGenie];
+        X[CloudWatch Metrics] --> W;
+        Y[Cloudability Data] --> W;
+        I -- Triggered by --> W;
+        J -- Triggered by --> W;
+    end
+
+```
 ---
 
 ⭐⭐⭐⭐⭐ Azure Events Hub Data Workflow
