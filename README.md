@@ -8,6 +8,7 @@ Most of what you see here are projects I've done in the past, OR things that I a
 - 🔭 I’m currently working on ... A FedRAMP project, and a Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB
 - 🌱 I’m currently learning ... FinOps Cloud Practitioner (Nearly done with Course) FinOps Foundation is Awesome!!!
 - 👯 I’m looking to collaborate on ... FinOps tasks
+- [ FinOps Certified Practitioner 🏆](FinOps - DeAcosta certificate-vkzzbp4idzfy-1744318412.pdf)
 - 💬 Ask me about ... Data Pipelines
 - 📫 How to reach me: ... chris.deacosta@gmail.com
 - ⚡ Fun fact: ... I love bass fishing, and looking for that elusive lunker bass. -->
