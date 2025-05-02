@@ -179,12 +179,12 @@ graph LR
 
 ```
 #### Description
-•	Data Sources: This subgraph shows the initial sources of data: AWS Cost and Usage Report (CUR) files and Datadog telemetry data. Both are ingested into Redshift.
-•	Data Ingestion & Processing: This part illustrates that Redshift acts as the central data warehouse where data is aggregated. Apache Airflow is included as a potential orchestration tool for the data ingestion pipelines.
-•	Data Usage: This section highlights the various purposes for which the data in Redshift is used, including FinOps reporting, tracking KPIs and SLAs, and for incident response related to both the environment and FinOps.
-•	Application Layer: This subgraph depicts the application's front-end (CloudFront), the RESTful API, and the backend microservices hosted in ECS and Lambda functions. It also shows backend services managing metadata for web applications and an asset catalog.
-•	Metadata & Governance: This section shows how the asset catalog connects to AWS DataZone, which assists with data governance.
-•	Configuration Management: AWS CodeDeploy is shown as the tool used to manage configuration changes across various components.
+•	Data Sources: This subgraph shows the initial sources of data: AWS Cost and Usage Report (CUR) files and Datadog telemetry data. Both are ingested into Redshift.<br>
+•	Data Ingestion & Processing: This part illustrates that Redshift acts as the central data warehouse where data is aggregated. Apache Airflow is included as a potential orchestration tool for the data ingestion pipelines.<br>
+•	Data Usage: This section highlights the various purposes for which the data in Redshift is used, including FinOps reporting, tracking KPIs and SLAs, and for incident response related to both the environment and FinOps.<br>
+•	Application Layer: This subgraph depicts the application's front-end (CloudFront), the RESTful API, and the backend microservices hosted in ECS and Lambda functions. It also shows backend services managing metadata for web applications and an asset catalog.<br>
+•	Metadata & Governance: This section shows how the asset catalog connects to AWS DataZone, which assists with data governance.<br>
+•	Configuration Management: AWS CodeDeploy is shown as the tool used to manage configuration changes across various components.<br>
 •	Monitoring & Alerting: This subgraph illustrates how Datadog monitors the environment, leveraging Bits AI for insights. Alerts from Datadog, CloudWatch, and Cloudability are fed into Atlassian OpsGenie for notification and incident management. The environment and FinOps incident response processes are shown as being triggered by these alerts.
 
 ---
