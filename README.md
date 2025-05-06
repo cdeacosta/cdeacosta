@@ -127,6 +127,11 @@ graph TD;
 ---
 Outside of starting SiriusXM Streaming from inception, this is the largest project I've ever been a part of.  I am the Cloud Solution Architect for this project.  This representation is probably going to change depending on cost controls.  This is a very expensive solution that so far, the client is not balking at the pricetag.
 
+#### KPIs
+![image](https://github.com/user-attachments/assets/65d6c0d0-ef75-46d3-b3f3-30e5c19630b7)
+
+[KPIs] (XXXXXXXXXXX_FinOps-SRE_KPIs.xlsx)
+
 ```mermaid
 graph LR
     subgraph Data Sources
