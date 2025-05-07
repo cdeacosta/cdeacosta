@@ -129,7 +129,7 @@ Outside of starting SiriusXM Streaming from inception, this is the largest proje
 
 #### KPIs
 
-[KPIs 📊⚙️📈] (https://github.com/cdeacosta/cdeacosta/blob/main/XXXXXXXXXXX_FinOps-SRE_KPIs.xlsx)
+[KPIs 📊⚙️📈](https://github.com/cdeacosta/cdeacosta/blob/main/XXXXXXXXXXX_FinOps-SRE_KPIs.xlsx)
 
 ```mermaid
 graph LR
