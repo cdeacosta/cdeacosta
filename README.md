@@ -1,9 +1,10 @@
 ![Chris DeAcosta](ChrisDeAcostaCard.png)
 
-Hi there 👋 I'm Chris DeAcosta
-I'm glad you're here.
-Welcome to My GitHub Profile  
-Most of what you see here are projects I've done in the past, OR things that I am working on now.  Not everything is represented here, and I cannot claim every single aspect of these projects has been done with my work alone.  I had a large part in the architecture and many of the data workflows.  I can claim that I know how the work was accomplished since all of these projects had active design reviews.  For the projects I did all or the majority of the work I've put in the following ⭐⭐⭐⭐⭐
+Welcome, I am Chris DeAcosta.
+
+This portfolio provides an overview of a small portion of my project experience. While this profile includes both past and current work, it is important to understand that architecture and software development are a collaborative endeavor. My contributions have frequently centered on architectural design and data workflow implementation. Due to the collaborative nature of these projects, I have a strong understanding of the complete development lifecycle, as all projects were subject to rigorous design reviews. 
+###### Note
+For projects where I held primary responsibility as the developer, architect, and implementation lead, I have included the following designation: ⭐⭐⭐⭐⭐
 
 ## Working On
 - 🔭 Data Pipelines in AWS using IoT telemetry data --> IoT Core --> Astra Streaming --> Astra DB (NO DIAGRAM)
