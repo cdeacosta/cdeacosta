@@ -26,6 +26,68 @@ For projects where I held primary responsibility as the developer, architect, an
 ---
 ## Projects
 
+#####  OTEL Sample Work (October 2024)
+
+###### I add this for my friends doing OTEL implementation.  
+It can be quite a cost savings to run OTEL agents instead of running your APM of choice.  I personnally find OTEL to be interesting and use cases are significant.
+
+###### OTEL API
+Obviously implementing something from the OTEL API is much more time consuming but it gives you the most control.  
+
+###### OTEL SDK
+The SDK gives you a higher level abstraction but is far less time intensive but, you get metrics, logs, and traces.  Allows more focus on business logic needed.
+
+###### OTEL Agents
+The are configured telemetry nodes or components that automatically gather telemetry data from your application and this does not require any change to the code.  This is my implementation choice because I have no real input into the code.  This is a quick win for collecting telemetry data.
+
+```mermaid
+flowchart TD
+    FluentdReceiver[Fluentd Receiver]
+    SpanProcessor[Span Processor]
+    OTLPExporter(OTLP Exporter)
+    FilteringExporter[Filtering Exporter]
+    Connector[Connector]
+    ResourceProcessor[Resource Processor]
+    PrometheusExporter[Prometheus Exporter]
+
+    FrontendService[Frontend Service]
+    OrderService[Order Service]
+    InventoryService[Inventory Service]
+    PaymentService[Payment Service]
+
+    FluentdReceiver --> SpanProcessor
+    FluentdReceiver --> FilteringExporter
+
+    SpanProcessor --> OTLPExporter
+    SpanProcessor --> FrontendService
+    SpanProcessor --> OrderService
+    SpanProcessor --> InventoryService
+    SpanProcessor --> PaymentService
+
+    FrontendService -- "Latency_FS_OS" --> OrderService
+    OrderService -- "Latency_OS_IS" --> InventoryService
+    InventoryService -- "Latency_IS_PS" --> PaymentService
+
+    FilteringExporter --> Connector
+    Connector --> ResourceProcessor
+    ResourceProcessor --> PrometheusExporter
+
+    PrometheusExporter -->|Metrics: total orders, order types| Prometheus
+
+    style FluentdReceiver fill:#90EE90,stroke:#333,stroke-width:2px
+    style SpanProcessor fill:#87CEFA,stroke:#333,stroke-width:2px
+    style OTLPExporter fill:#FFFFE0,stroke:#333,stroke-width:2px
+    style FilteringExporter fill:#87CEFA,stroke:#333,stroke-width:2px
+    style Connector fill:#87CEFA,stroke:#333,stroke-width:2px
+    style ResourceProcessor fill:#87CEFA,stroke:#333,stroke-width:2px
+    style PrometheusExporter fill:#FFFFE0,stroke:#333,stroke-width:2px
+
+    style FrontendService fill:#ADD8E6,stroke:#333,stroke-width:1px
+    style OrderService fill:#ADD8E6,stroke:#333,stroke-width:1px
+    style InventoryService fill:#ADD8E6,stroke:#333,stroke-width:1px
+    style PaymentService fill:#ADD8E6,stroke:#333,stroke-width:1px
+```
+
 ⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government associated contract.
 
 ```mermaid
