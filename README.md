@@ -42,6 +42,10 @@ The are configured telemetry nodes or components that automatically gather telem
 
 ```mermaid
 flowchart TD
+    OTELAgent1[OTEL Agent 1]
+    OTELAgent2[OTEL Agent 2]
+    OTELAgent3[OTEL Agent 3]
+    OTELAgent4[OTEL Agent 4]
     FluentdReceiver[Fluentd Receiver]
     SpanProcessor[Span Processor]
     OTLPExporter(OTLP Exporter)
@@ -55,6 +59,10 @@ flowchart TD
     InventoryService[Inventory Service]
     PaymentService[Payment Service]
 
+    OTELAgent1 --> FluentdReceiver
+    OTELAgent2 --> FluentdReceiver
+    OTELAgent3 --> FluentdReceiver
+    OTELAgent4 --> FluentdReceiver
     FluentdReceiver --> SpanProcessor
     FluentdReceiver --> FilteringExporter
 
@@ -81,6 +89,10 @@ flowchart TD
     style Connector fill:#87CEFA,stroke:#333,stroke-width:2px
     style ResourceProcessor fill:#87CEFA,stroke:#333,stroke-width:2px
     style PrometheusExporter fill:#FFFFE0,stroke:#333,stroke-width:2px
+    style OTELAgent1 fill:#BA55D3,stroke:#333,stroke-width:2px
+    style OTELAgent2 fill:#BA55D3,stroke:#333,stroke-width:2px
+    style OTELAgent3 fill:#BA55D3,stroke:#333,stroke-width:2px
+    style OTELAgent4 fill:#BA55D3,stroke:#333,stroke-width:2px
 
     style FrontendService fill:#ADD8E6,stroke:#333,stroke-width:1px
     style OrderService fill:#ADD8E6,stroke:#333,stroke-width:1px
