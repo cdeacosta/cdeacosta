@@ -26,7 +26,9 @@ For projects where I held primary responsibility as the developer, architect, an
 ---
 ## Projects
 
-#####  OTEL Sample Work (October 2024)
+---
+
+###  OTEL Sample Work (October 2024)
 
 ###### I add this for my friends doing OTEL implementation.  
 It can be quite a cost savings to run OTEL agents instead of running your APM of choice.  I personnally find OTEL to be interesting and use cases are significant.
@@ -100,11 +102,11 @@ flowchart TD
     style PaymentService fill:#ADD8E6,stroke:#333,stroke-width:1px
 ```
 OpenTelemetry Implementation: Unified Observability Pipeline
-### 1.  Introduction
+#### 1.  Introduction
 
 This documents part of a solution for an OpenTelemetry (OTEL) implementation designed to provide unified observability for our distributed e-commerce application. It leverages OTEL agents, Fluentd, and processing pipeline to collect, process, and export telemetry data (traces and metrics) to multiple backends.
 
-### 2.  Architecture
+#### 2.  Architecture
 
 The architecture comprises the following key components:
 
@@ -148,7 +150,7 @@ The architecture comprises the following key components:
 
         * Prometheus: Stores and exposes metrics, allowing for time-series analysis and alerting (e.g., total orders, order types).
 
-### 3.  Data Flow
+#### 3.  Data Flow
 
     1. Data Generation: OTEL agents, deployed with each service, automatically collect trace and metric data.
 
@@ -176,7 +178,7 @@ The architecture comprises the following key components:
 
         * Metrics are queried and visualized in Prometheus and Grafana, providing insights into order volume, types, and system performance.
 
-### 4.  My take on key features and benefits
+#### 4.  My take on key features and benefits
 
     * Unified Observability: This provides a nice single solution for both traces and metrics.
 
@@ -186,6 +188,9 @@ The architecture comprises the following key components:
 
     * Performance: I haven't done any comparison but I would have to think putting Fluentd as a receiver helps the cause of efficient log aggregation.
 
+---
+
+### FinOps & SRE Engagement
 
 ⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government associated contract.
 
@@ -287,6 +292,9 @@ graph TD;
 ```
 
 ---
+
+### SRE & FinOps w/ defined SLIs/SLOs and KPI for both SRE & FinOps
+
 Outside of starting SiriusXM Streaming from inception, this is the largest project I've ever been a part of.  I am the Cloud Solution Architect for this project.  This representation is probably going to change depending on cost controls.  This is a very expensive solution that so far, the client is not balking at the pricetag.
 
 #### KPIs
@@ -355,6 +363,8 @@ graph LR
 •	Monitoring & Alerting: This subgraph illustrates how Datadog monitors the environment, leveraging Bits AI for insights. Alerts from Datadog, CloudWatch, and Cloudability are fed into Atlassian OpsGenie for notification and incident management. The environment and FinOps incident response processes are shown as being triggered by these alerts.
 
 ---
+
+### Azure Events Hub 
 
 ⭐⭐⭐⭐⭐ Azure Events Hub Data Workflow
 
