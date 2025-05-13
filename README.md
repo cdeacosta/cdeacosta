@@ -102,89 +102,89 @@ flowchart TD
 OpenTelemetry Implementation: Unified Observability Pipeline
 ### 1.  Introduction
 
-This document outlines a proposed OpenTelemetry (OTEL) implementation designed to provide unified observability for our distributed e-commerce application. This solution leverages OTEL agents, Fluentd, and a streamlined processing pipeline to collect, process, and export telemetry data (traces and metrics) to multiple backends, enabling comprehensive monitoring and analysis.
+This documents part of a solution for an OpenTelemetry (OTEL) implementation designed to provide unified observability for our distributed e-commerce application. It leverages OTEL agents, Fluentd, and processing pipeline to collect, process, and export telemetry data (traces and metrics) to multiple backends.
 
 ### 2.  Architecture
 
 The architecture comprises the following key components:
 
-OTEL Agents:
+    * OTEL Agents:
 
-Deployed on each service host (Frontend, Order, Inventory, Payment).
+        * Deployed on each service host (Frontend, Order, Inventory, Payment).
 
-Instrument services to collect traces and metrics using OTEL SDKs.
+        * Instrument services to collect traces and metrics using OTEL SDKs.
 
-Forward data to Fluentd.
+        * Forward data to Fluentd.
 
-Fluentd:
+    * Fluentd:
 
-Acts as a centralized receiver, aggregating telemetry data from OTEL agents.
+        * Acts as a centralized receiver, aggregating telemetry data from OTEL agents.
 
-Provides efficient log aggregation and forwarding capabilities.
+        * Provides efficient log aggregation and forwarding capabilities.
 
-OTEL Collector Pipeline:
+    * OTEL Collector Pipeline:
 
-Span Processing:
+        * Span Processing:
 
-Receives trace data from Fluentd.
+            * Receives trace data from Fluentd.
 
-Enriches spans with context (e.g., service relationships, latency).
+            * Provides spans with context (e.g., service relationships, latency).
 
-Exports processed spans to an OTLP-compliant backend (e.g., Jaeger, Zipkin).
+            * Exports processed spans to an OTLP-compliant backend (e.g., Jaeger, Zipkin).
 
-Metrics Processing:
+        * Metrics Processing:
 
-Receives metrics from Fluentd.
+            * Receives metrics from Fluentd.
 
-Filters relevant metrics (e.g., order-related metrics).
+            * Filters relevant metrics (e.g., order-related metrics).
 
-Processes metrics (e.g., aggregates, calculates rates).
+            * Processes metrics (e.g., aggregates, calculates rates).
 
-Exports processed metrics to Prometheus.
+            * Exports processed metrics to Prometheus.
 
-Observability Backends:
+    * Observability Backends:
 
-OTLP Backend: Stores and visualizes trace data, enabling distributed tracing and performance analysis.
+        * OTLP Backend: Stores and visualizes trace data, enabling distributed tracing and performance analysis.
 
-Prometheus: Stores and exposes metrics, allowing for time-series analysis and alerting (e.g., total orders, order types).
+        * Prometheus: Stores and exposes metrics, allowing for time-series analysis and alerting (e.g., total orders, order types).
 
 ### 3.  Data Flow
 
-Data Generation: OTEL agents, deployed with each service, automatically collect trace and metric data.
+    1. Data Generation: OTEL agents, deployed with each service, automatically collect trace and metric data.
 
-Data Aggregation: Agents forward the collected data to Fluentd for centralized handling.
+    2. Data Aggregation: Agents forward the collected data to Fluentd for centralized handling.
 
-Trace Processing:
+    3. Trace Processing:
 
-Fluentd forwards trace data to the OTEL Collector's span processor.
+        * Fluentd forwards trace data to the OTEL Collector's span processor.
 
-The processor adds context, and the data is exported to the OTLP backend.
+        * The processor adds context, and the data is exported to the OTLP backend.
 
-Metrics Processing:
+    4. Metrics Processing:
 
-Fluentd forwards metrics to the OTEL Collector's metrics pipeline.
+        * Fluentd forwards metrics to the OTEL Collector's metrics pipeline.
 
-The filtering exporter selects order-specific metrics.
+        * The filtering exporter selects order-specific metrics.
 
-The connector passes these to the resource processor.
+        * The connector passes these to the resource processor.
 
-The resource processor adds metadata, and the Prometheus exporter sends them to Prometheus.
+        * The resource processor adds metadata, and the Prometheus exporter sends them to Prometheus.
 
-Data Analysis:
+    5. Data Analysis:
 
-Traces are visualized in the OTLP backend, enabling distributed transaction tracing.
+        * Traces are visualized in the OTLP backend, enabling distributed transaction tracing.
 
-Metrics are queried and visualized in Prometheus and Grafana, providing insights into order volume, types, and system performance.
+        * Metrics are queried and visualized in Prometheus and Grafana, providing insights into order volume, types, and system performance.
 
 ### 4.  My take on key features and benefits
 
-Unified Observability: This provides a nice single solution for both traces and metrics.
+    * Unified Observability: This provides a nice single solution for both traces and metrics.
 
-Vendor Neutrality: Obviously that is really what OTEL brings to the table.
+    * Vendor Neutrality: Obviously that is really what OTEL brings to the table.
 
-Scalability: This is something that isn't unique to OTEL however, I like the pricetag of only paying for the infrastructure and it handles high volume.
+    * Scalability: This is something that isn't unique to OTEL however, I like the pricetag of only paying for the infrastructure and it handles high volume.
 
-Performance: I haven't done any comparison but I would have to think putting Fluentd as a receiver helps the cause of efficient log aggregation.
+    * Performance: I haven't done any comparison but I would have to think putting Fluentd as a receiver helps the cause of efficient log aggregation.
 
 
 ⭐⭐⭐⭐⭐ This is what I'm working on now.  Refining this to add FedRAMP "Authorized" Apptio as a FinOps tool for a U.S. Government associated contract.
